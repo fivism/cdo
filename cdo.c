@@ -1,6 +1,6 @@
 #include "cdo.h"
 
-/* main: all forward facing/output heavy functions and main are here */
+/* main: all forward facing/output functions and main are here */
 
 void signal_handler(int signo) {
     if (signo == SIGINT) {
