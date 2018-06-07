@@ -104,7 +104,7 @@ int read_list()
     return 0;
 }
 
-/* Main: basic logic and file operations here */
+/* Main: basic logic and file here */
 int main(int argc, char *argv[])
 {
 
