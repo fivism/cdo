@@ -9,7 +9,6 @@ void print_list()
     {
         if (list[i] != NULL)
         {
-
             printf("[" ANSI_YELLOW "%d" ANSI_RESET "] %s \n", (cnt), list[i]->text);
             ++cnt;
         }
@@ -74,12 +73,7 @@ int write_test_list()
     return 0;
 }
 
-/* Reads in list from save file (default: ~/.cdo_list) 
- * Return: 
- * 0 on read success
- * -1 on nofile/badfile
- */
-
+/* Reads in list from save file (default: ~/.cdo)  */
 int read_list()
 {
     FILE *fp;
@@ -99,7 +93,6 @@ int read_list()
         // Sequentially fread the things in
         unsigned char todobyte;
         fread(&todobyte, 1, 1, fp);
-        //TODO this needs to change with highlighting
         Todoptr tmp_todo = talloc(todobyte + 1); // flexible length of size todobyte
         tmp_todo->todobyte = todobyte;
         fread(&tmp_todo->text, 1, todobyte, fp);

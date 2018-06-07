@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <signal.h>
 #include <stdbool.h>
 #define SAV_FILE ".cdo" // Filename
 #define MAX_TODO 21
