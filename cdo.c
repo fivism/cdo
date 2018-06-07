@@ -136,21 +136,20 @@ int main(int argc, char *argv[])
         exit(0);
     }
 
+    char *endpoint;
+
     if (argc == 2)
     {
-        char *endpoint;
         int retv = strtol(argv[1], &endpoint, 10);
-        if (retv > 0)
+        if ((retv > 0) && (*endpoint == 0))
         {
             if (retv < todo_cnt + 1)
             {
-                printf("endpoint = %s\n", endpoint);
                 delete_todo(retv - 1);
                 write_list();
             }
             else
             {
-                printf("endpoint = %s\n", endpoint);
                 printf("Todo [%d] doesn't exist!\n", retv);
                 return 0;
             }

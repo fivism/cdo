@@ -1,0 +1,42 @@
+Output
+$> cdo
+[1] Get the LCD screen setup again
+[2] Try and run some Scheme code
+[3] Delete four
+[4] Pick up the eggs
+
+Here we:
+read in file into memstruct
+print in the end
+
+
+$> cdo 2
+[1] Get the LCD screen setup again
+[2] Delete four
+[3] Pick up the eggs
+
+Here we:
+- read in file into memstruct
+- Delete map[1]
+- Print in the end
+- Write new file
+
+
+$> cdo "Add on the thing"
+[1] Get the LCD screen setup again
+[2] Delete four
+[3] Pick up the eggs
+[4] Add on the thing
+
+Here we:
+- read in file into memstruct
+- Add new entry to the map 
+- Print in the end
+- Write new file
+
+
+$> cdo
+[1] Get the LCD screen setup again
+[2] Delete four
+[3] Pick up the eggs
+[4] Add on the thing
