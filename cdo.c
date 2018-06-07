@@ -2,17 +2,6 @@
 
 /* main: all forward facing/output functions and main are here */
 
-/* signal_handler not really used here */
-void signal_handler(int signo)
-{
-    if (signo == SIGINT)
-    {
-        // TODO Safe interrupt
-        // dat_writer("RECOVERED.dat");
-        exit(1);
-    }
-}
-
 void print_list()
 {
     int i, cnt = 1;
@@ -20,7 +9,8 @@ void print_list()
     {
         if (list[i] != NULL)
         {
-            printf("[%d] %s \n", (cnt), list[i]->text);
+
+            printf("[" ANSI_YELLOW "%d" ANSI_RESET "] %s \n", (cnt), list[i]->text);
             ++cnt;
         }
     }
@@ -172,6 +162,5 @@ int main(int argc, char *argv[])
         print_list();
     }
 
-    signal(SIGINT, signal_handler);
     return 0;
 }
