@@ -16,10 +16,7 @@ void print_list()
     }
 }
 
-/* Writes out new save file from memstruct if there were any adds/removals
- * Return: 
- *  0 on write success
- */
+/* Writes out new save file from memstruct if there were any adds/removals */
 int write_empty_list()
 {
     FILE *fp;
