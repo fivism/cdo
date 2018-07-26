@@ -11,7 +11,7 @@ a working prototype alpha for now. Proudly released under the new [GLWT license]
 
 # TODO
 - [x] Add a splash of color
-- [ ] Add a 0box celebratory message
+- [ ] Add a 0-box celebratory message
 - [x] Add help flags 
 - [ ] Fix directory path for savefile
 - [ ] Config for dropbox piggybacking
