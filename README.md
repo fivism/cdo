@@ -7,6 +7,7 @@ local savefile has a purposely-obfuscated byte order such that cheating on your 
  
 a working prototype alpha for now. Proudly released under the new [GLWT license](https://github.com/me-shaon/GLWTPL/blob/master/LICENSE).
 
+![alt text](sample.png "cdo example")
 
 # TODO
 - [x] Add a splash of color
